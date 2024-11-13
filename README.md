@@ -37,4 +37,10 @@ Create the Table using the following query before importing the Dataset in Datab
 );`
 
 
-#### Performed Exploratory Data Analysis (EDA) on the Table to get the Better Understand about the Table `Spotify` 
+#### Performed Exploratory Data Analysis (EDA) on the Table to get the Better Understand about the Table `Spotify`.
+
+##### Total Number of Rows in the Table `Spotify`.
+
+##### Unique Values present in the Album Column.
+
+##### Unique Values present in the Artist Column.
