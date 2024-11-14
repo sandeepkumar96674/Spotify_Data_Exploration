@@ -1,3 +1,7 @@
+![image](https://github.com/user-attachments/assets/e19b73af-10b6-4dce-a6e2-2e6141b52b48)
+
+
+
 # Spotify_Data_Exploration
 
 You can download the Dataset from Kaggle using the [link](https://www.kaggle.com/datasets/sandeepkumar7372/spotify-dataset).
@@ -126,7 +130,7 @@ where licensed is true;`
 `Select * from spotify 
 where album_type = 'single';`
 <br>
-
+<br>
 >**Q5. Total number of Tracks by each Artists**
 
 `select count(album)as Total_Track,artist
