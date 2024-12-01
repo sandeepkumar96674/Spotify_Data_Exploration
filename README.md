@@ -118,7 +118,7 @@ where duration_min = 0;
 
 <hr>
 
-## Business Problems with their Solution:
+## Business Problems with their Solution Queries:
 
 <br>
 
@@ -140,7 +140,7 @@ order by 1;
 
 <br>
 
->**Q.3 Get the total number of Comments for Track where value of licensed column is True.**
+>**Q3. Get the total number of Comments for Track where value of licensed column is True.**
 
 ```
 select sum(comments) as Total_Comment
@@ -150,7 +150,7 @@ where licensed is true;
 
 <br>
 
->**Q.4 Find all the Tracks that belongs to the Album type "Single".**
+>**Q4. Find all the Tracks that belongs to the Album type "Single".**
 
 ```
 Select * from spotify 
