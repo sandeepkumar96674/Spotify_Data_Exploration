@@ -9,13 +9,14 @@ You can download the Dataset from Kaggle using the [link](https://www.kaggle.com
 
 Create the Table using the following query before importing the Dataset in Database:
 
->I created the Table with the name `spotify`
+> I have created the Table with the name `"spotify"`
 
 ```
 DROP TABLE IF EXISTS spotify;
 ```
 
-```CREATE TABLE spotify (
+```
+CREATE TABLE spotify (
     artist VARCHAR(255),
     track VARCHAR(255),
     album VARCHAR(255),
