@@ -168,3 +168,10 @@ from spotify
 group by artist
 order by 1;
 ```
+
+>**Q6. Calculate the Average Danceability  of Tracks in each Album**
+
+
+>**Q7. Find the Top-5 Tracks with the Highest energy values**
+
+>**List all the Tracks along with thier Views and Likes**
