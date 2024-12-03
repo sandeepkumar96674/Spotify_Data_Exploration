@@ -175,3 +175,8 @@ order by 1;
 >**Q7. Find the Top-5 Tracks with the Highest energy values**
 
 >**Q8. List all the Tracks along with thier Views and Likes**
+
+>**Q9. Calcualte the taotal views of all associated Tracks for each Album**
+
+
+>**Q10. Retrieve the Track Names that have been streamed on Spotify more than YouTube**
