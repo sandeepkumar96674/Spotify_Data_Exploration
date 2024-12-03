@@ -174,4 +174,4 @@ order by 1;
 
 >**Q7. Find the Top-5 Tracks with the Highest energy values**
 
->**List all the Tracks along with thier Views and Likes**
+>**Q8. List all the Tracks along with thier Views and Likes**
