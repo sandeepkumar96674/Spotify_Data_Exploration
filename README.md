@@ -170,13 +170,43 @@ order by 1;
 ```
 
 >**Q6. Calculate the Average Danceability  of Tracks in each Album**
-
+```
+select album,avg(danceability) from spotify
+group by 1
+order by 2 desc;
+```
 
 >**Q7. Find the Top-5 Tracks with the Highest energy values**
+```
+select track, max(energy) from spotify
+group by 1
+order by 2 desc
+limit 5;
+```
 
->**Q8. List all the Tracks along with thier Views and Likes**
 
->**Q9. Calcualte the taotal views of all associated Tracks for each Album**
+>**Q8. List all the Tracks along with thier Views and Likes where official_video = TRUE**
+```
+select track,sum(views),sum(likes) from spotify
+where official_video=true
+group by 1
+order by 2;
+```
 
+
+>**Q9. Calcualte the total views of all associated Tracks for each Album**
+```
+select album,track,sum(views) from spotify
+group by 1,2;
+```
 
 >**Q10. Retrieve the Track Names that have been streamed on Spotify more than YouTube**
+```
+select * from (
+select track,
+coalesce(sum(case when most_played_on = "Youtube" then Stream end),0) as Youtube
+coalesce(sum(case when most_played_on = "Spotify" then Stream end),0) as Spotify
+from spotify
+group by 1) as t1
+where Spotify > Youtube and Youtube <>0;
+```
