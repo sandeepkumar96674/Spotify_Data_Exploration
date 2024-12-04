@@ -96,7 +96,6 @@ select max(duration_min) from spotify;
 ```
 select min(duration_min) from spotify;
 ```
-
 <br>
 
 >**Selecting the Rows with 0 Duration_Min**
