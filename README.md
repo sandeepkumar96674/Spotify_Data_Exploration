@@ -120,8 +120,7 @@ where duration_min = 0;
 
 ## Business Problems with their Solution Queries:
 
-<br>
-
+<hr>
 >**Q1. Retrieving the names of all the tracks that have more than 1 Billion Streams.**
 
 ```
