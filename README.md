@@ -6,13 +6,24 @@
 
 You can download the Dataset from Kaggle using the [link](https://www.kaggle.com/datasets/sandeepkumar7372/spotify-dataset).
 
+<br>
+
 I have solved the Business Problem by using SQL and Python Both.
+
+<br>
 
 You can check my approach for Python Solution using the [link]().
 
+<br>
+<hr>
 For Solution using SQL, Go through with the following: 
 
+<br>
+<br>
 Create the Table using the following query before importing the Dataset in Database:
+
+<br>
+<br>
 
 > I have created the Table with the name `"spotify"`
 
