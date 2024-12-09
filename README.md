@@ -137,6 +137,7 @@ where duration_min = 0;
 ## Business Problems with their Solution Queries:
 
 <hr>
+<hr>
 >**Q1. Retrieving the names of all the tracks that have more than 1 Billion Streams.**
 
 ```
@@ -145,7 +146,7 @@ where stream > 1000000000;
 ```
 
 <br>
-
+<hr>
 >**Q2. List all the Albums along with their respective Artist**
 
 ```
@@ -154,7 +155,7 @@ order by 1;
 ```
 
 <br>
-
+<hr>
 >**Q3. Get the total number of Comments for Track where value of licensed column is True.**
 
 ```
@@ -164,7 +165,7 @@ where licensed is true;
 ```
 
 <br>
-
+<hr>
 >**Q4. Find all the Tracks that belongs to the Album type "Single".**
 
 ```
@@ -173,7 +174,7 @@ where album_type = 'single';
 ```
 <br>
 <br>
-
+<hr>
 >**Q5. Total number of Tracks by each Artists**
 
 ```
@@ -182,14 +183,14 @@ from spotify
 group by artist
 order by 1;
 ```
-
+<hr>
 >**Q6. Calculate the Average Danceability  of Tracks in each Album**
 ```
 select album,avg(danceability) from spotify
 group by 1
 order by 2 desc;
 ```
-
+<hr>
 >**Q7. Find the Top-5 Tracks with the Highest energy values**
 ```
 select track, max(energy) from spotify
@@ -198,7 +199,7 @@ order by 2 desc
 limit 5;
 ```
 
-
+<hr>
 >**Q8. List all the Tracks along with thier Views and Likes where official_video = TRUE**
 ```
 select track,sum(views),sum(likes) from spotify
@@ -206,14 +207,14 @@ where official_video=true
 group by 1
 order by 2;
 ```
-
+<hr>
 
 >**Q9. Calcualte the total views of all associated Tracks for each Album**
 ```
 select album,track,sum(views) from spotify
 group by 1,2;
 ```
-
+<hr>
 >**Q10. Retrieve the Track Names that have been streamed on Spotify more than YouTube**
 ```
 select * from (
@@ -224,3 +225,4 @@ from spotify
 group by 1) as t1
 where Spotify > Youtube and Youtube <>0;
 ```
+<hr>
