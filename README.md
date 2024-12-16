@@ -65,7 +65,7 @@ CREATE TABLE spotify (
 
 <br>
 
-**Exploratory Data Analysis 🔎**
+#### Exploratory Data Analysis 🔎
 
 <hr>
 
@@ -75,7 +75,7 @@ select count(*) from spotify;
 
 <br>
 
-**Count the Distinct Artist in "Artist" Column.**
+#### Count the Distinct Artist in "Artist" Column.
 
 ```
 select count(distinct artist) from spotify;
@@ -83,7 +83,7 @@ select count(distinct artist) from spotify;
 
 <br>
 
-**Count the Distinct Album present in the Column**
+#### Count the Distinct Album present in the Column
 
 ```
 select count(distinct album) from spotify;
@@ -91,7 +91,7 @@ select count(distinct album) from spotify;
 
 <br>
 
-**Count the Distinct Artist present in the Column**
+#### Count the Distinct Artist present in the Column
 
 ```
 select count(distinct artist) from spotify;
@@ -99,7 +99,7 @@ select count(distinct artist) from spotify;
 
 <br>
 
-**Maximum "Duration_min"**
+#### Maximum "Duration_min"
 
 ```
 select max(duration_min) from spotify;
@@ -107,14 +107,14 @@ select max(duration_min) from spotify;
 
 <br>
 
-**Minimum "Duration_Min"**
+#### Minimum "Duration_Min"
 
 ```
 select min(duration_min) from spotify;
 ```
 <br>
 
-**Selecting the Rows with 0 Duration_Min**
+#### Selecting the Rows with 0 Duration_Min
 
 ```
 select * from spotify
@@ -123,7 +123,7 @@ where duration_min = 0;
 
 <br>
 
-**Deleting the Rows of Duration_min column with the value 0 and Validating the Data.**
+#### Deleting the Rows of Duration_min column with the value 0 and Validating the Data.
 
 ```
 delete from spotify
@@ -138,6 +138,7 @@ where duration_min = 0;
 
 <hr>
 <hr>
+
 **Q1. Retrieving the names of all the tracks that have more than 1 Billion Streams.**
 
 ```
@@ -147,6 +148,7 @@ where stream > 1000000000;
 
 <br>
 <hr>
+
 **Q2. List all the Albums along with their respective Artist**
 
 ```
@@ -156,6 +158,7 @@ order by 1;
 
 <br>
 <hr>
+
 **Q3. Get the total number of Comments for Track where value of licensed column is True.**
 
 ```
@@ -166,6 +169,7 @@ where licensed is true;
 
 <br>
 <hr>
+
 **Q4. Find all the Tracks that belongs to the Album type "Single".**
 
 ```
@@ -175,6 +179,7 @@ where album_type = 'single';
 <br>
 <br>
 <hr>
+
 **Q5. Total number of Tracks by each Artists**
 
 ```
@@ -184,6 +189,7 @@ group by artist
 order by 1;
 ```
 <hr>
+
 **Q6. Calculate the Average Danceability  of Tracks in each Album**
 ```
 select album,avg(danceability) from spotify
