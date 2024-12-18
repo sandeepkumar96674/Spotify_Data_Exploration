@@ -135,8 +135,6 @@ where duration_min = 0;
 <hr>
 
 ## Business Problems with their Solution Queries:
-
-<hr>
 <hr>
 
 **Q1. Retrieving the names of all the tracks that have more than 1 Billion Streams.**
@@ -145,8 +143,6 @@ where duration_min = 0;
 select * from spotify
 where stream > 1000000000;
 ```
-
-<br>
 <hr>
 
 **Q2. List all the Albums along with their respective Artist**
@@ -155,8 +151,6 @@ where stream > 1000000000;
 select distinct album,artist from spotify
 order by 1;
 ```
-
-<br>
 <hr>
 
 **Q3. Get the total number of Comments for Track where value of licensed column is True.**
@@ -166,8 +160,6 @@ select sum(comments) as Total_Comment
 from spotify
 where licensed is true;
 ```
-
-<br>
 <hr>
 
 **Q4. Find all the Tracks that belongs to the Album type "Single".**
@@ -176,8 +168,6 @@ where licensed is true;
 Select * from spotify 
 where album_type = 'single';
 ```
-<br>
-<br>
 <hr>
 
 **Q5. Total number of Tracks by each Artists**
