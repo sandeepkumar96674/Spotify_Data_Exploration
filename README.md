@@ -65,7 +65,7 @@ CREATE TABLE spotify (
 
 <br>
 
-#### Exploratory Data Analysis 🔎
+### Exploratory Data Analysis(EDA) to know more about the Dataset 🔎
 
 <hr>
 
